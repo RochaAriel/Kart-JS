@@ -23,7 +23,7 @@ async function rolldeice(){
 // Passa espressoes JS ${} nao somente variaveis , exemplo: calculos 
 
 async function logRollResult(characterName,block,attribute,dieceResult){
-    console.log(`${characterName} 🎲 rolou um dado de : ${block} ${dieceResult} + ${attribute} = ${ 
+    console.log (`${characterName} 🎲 rolou um dado de : ${block} ${dieceResult} + ${attribute} = ${ 
         dieceResult + attribute
     }`)
 }
@@ -93,7 +93,7 @@ async function playraceEngine(character1, character2) {
         }    
         // verificando  o vencedor
       if(totalTestSkill1 > totalTestSkill2 ){   
-             console.log `${character1.NOME}  marcou 1 ponto!`;
+             console.log (`${character1.NOME}  marcou 1 ponto!`);
              character1.PONTO ++;
 
       }else if(totalTestSkill2 > totalTestSkill1){
@@ -108,7 +108,7 @@ async function playraceEngine(character1, character2) {
  
  async function getRandomBlock() {
      let random = Math.random();
-     let = result = "";
+     let result = "";
  
      switch (true) { 
          case random < 0.33:
